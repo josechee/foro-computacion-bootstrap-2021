@@ -7,6 +7,13 @@
     border-radius: 3px;
 }
 
+#main .carousel-inner img {
+    /*el 70% del alto de la pantalla*/
+    max-height: 70vh;
+    object-fit: hover;
+    filter: grayscale(70%);
+}
+
 #footer {
     background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
 }
