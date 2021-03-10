@@ -1,5 +1,10 @@
+.text-unpa {
+    color: #97c93e !important;
+}
+
 #header img {
     width: 80px;
+    border-radius: 3px;
 }
 
 #footer {
