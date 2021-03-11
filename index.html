@@ -13,9 +13,9 @@
     <title>Foro Computacion</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-target="#navbar" data-bs-offset="120" tabindex="0">
     <!-- Header-->
-    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="img/logoComputacion.png" alt="logo unpa"> Foro de Ingeniería en Computación
@@ -23,19 +23,19 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Las conferencias</a>
+                        <a class="nav-link" aria-current="page" href="#main">Las conferencias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Los oradores</a>
+                        <a class="nav-link" href="#speakers">Los oradores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                        <a class="nav-link" href="#placeTime">El lugar y la fecha</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Conviertete en orador</a>
+                        <a class="nav-link" href="#convierteEnOrador">Conviertete en orador</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-unpa" href="#">Registro al evento</a>
@@ -154,48 +154,66 @@
     </section>
     <!-- fin de speakers u oradores-->
 
+    <!-- lugar y fecha-->
+    <section id="placeTime">
+        <div class="container-fluid" id="lugar">
+            <div class="row ">
+                <div class="col-12 col-lg-6 pl-0 pr-0 ">
+                    <img src="img/imgAuditorioUnpa.jpg " class="col-12 col-lg-12 " alt="Auditorio ">
+                </div>
+                <div class="col-12 col-lg-6 pt-4 pb-4 ">
+                    <h3>Auditorio UNPA - Enero 2022</h3>
+                    <p>
+                        El Auditorio de la UNPA, es el lugar donde sucenden grandes eventos como este foro de la Carrera de Ingeniería en Computación
+                    </p>
+                    <a class="btn btn-outline-light " href="# ">Conoce más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fin lugar y fecha-->
 
     <!--conviertete en orador-->
 
-    <section id="convierteEnOrador" class="pt-3 pb-3">
-        <div class="container">
-            <div class="row">
-                <div class="col text-uppercase text-center">
+    <section id="convierteEnOrador" class="pt-3 pb-3 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col text-uppercase text-center ">
                     <small>
                         Conviertete en un
                     </small>
                     <h2>Orador</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col text-center">
+            <div class="row ">
+                <div class="col text-center ">
                     Registrate como orador para dar una charla ignite. Cuentanos de que quieres hablar!
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
+            <div class="row ">
+                <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2 ">
                     <form>
-                        <div class="form-row">
-                            <div class="form-group col-12 col-md-12">
-                                <input type="text" class="form-control" placeholder="Nombre">
+                        <div class="form-row ">
+                            <div class="form-group col-12 col-md-12 ">
+                                <input type="text " class="form-control " placeholder="Nombre ">
                             </div>
-                            <div class="form-group col-12 col-md-12">
-                                <input type="text" class="form-control" placeholder="Apellido">
+                            <div class="form-group col-12 col-md-12 ">
+                                <input type="text " class="form-control " placeholder="Apellido ">
                             </div>
                         </div>
-                        <div class="form-row">
-                            <div class="form-group col">
-                                <textarea name="text" class="form-control form-control-lg" placeholder="Sobre que quieres hablar?"></textarea>
-                                <small class="form-text text-muted">
+                        <div class="form-row ">
+                            <div class="form-group col ">
+                                <textarea name="text " class="form-control form-control-lg " placeholder="Sobre que quieres hablar? "></textarea>
+                                <small class="form-text text-muted ">
                                         Recuerda incluir un titulo para tu charla
                                 </small>
                             </div>
                         </div>
 
-                        <div class="form-row">
-                            <div class="col d-grid gap-2">
-                                <button type="button" class="btn btn-unpa  btn-block">
+                        <div class="form-row ">
+                            <div class="col d-grid gap-2 ">
+                                <button type="button " class="btn btn-unpa btn-block ">
                                     Enviar
                                 </button>
                             </div>
@@ -208,7 +226,7 @@
     <!--fin de conviertete en orador-->
 
     <!-- Footer-->
-    <footer id="footer" class="pb-4 pt-4 ">
+    <footer id="footer " class="pb-4 pt-4 ">
         <div class="container ">
             <div class="row text-center ">
                 <div class="col-12 col=lg ">
